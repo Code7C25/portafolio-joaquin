@@ -1,0 +1,120 @@
+/*Variables CSS*/
+:root {
+    --body-bg-color: #090909; 
+    --text-color: #ffffff; 
+    --colorh1-color: #ffffff; 
+}
+/*aplicar las variables CSS creadas por el root*/
+/*aplicar las variables CSS creadas por el root*/
+body {
+    background: var(--body-bg-color); /*color de fondo*/
+    color: var(--text-color); /*color de la fuente*/
+    font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*aplicar las variables CSS creadas por el root*/
+h1,h2{
+    color: var(--colorh1-color); /*color de la fuente*/
+}
+/*
+body {
+    background: #000000;
+    color: #fff; 
+    font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}*/
+
+
+/*Titulo del header*/
+.titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+/*barra de navegacion*/
+.navigation {
+    display: flex; /*flexbox*/
+    gap: 3rem; /*espacio entre los elementos*/
+    list-style: none; /*quita los puntos de la lista*/
+    justify-content: flex-end; /*justifica los elementos a la derecha*/
+    margin: 0  3rem; /*margen superior e inferior*/
+    overflow: hidden; /*oculta los elementos que sobresalen*/
+    
+}
+/* enlaces de la barra de navegacion*/
+.navigation li {
+    font-size: 1rem;
+    width:  100px; /*ancho de los elementos*/
+    text-align: center;
+    padding: 0.5rem; /*espacio interno*/
+    border-radius: 0.5rem; /*bordes redondeados*/
+    background: #1a1919; /*color de fondo*/
+    box-shadow: 0 0 0.5rem #a3a3a3; /*sombra*/
+}
+/* estilo de la barra de navegacion*/
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sobremi {
+    display: flex;
+    justify-content: center; /*centra el contenido*/
+}
+.container-sobremi {
+    display: flex;
+    width: 50%; /*ancho del contenedor*/
+    padding: 2rem;
+    margin-top: 5rem; /*margen superior*/
+    line-height: 2.5rem; /*espacio entre los parrafos*/
+    font-size: large; /*tamaño de la fuente*/
+    color: azure; /*color de la fuente*/
+    gap: 5rem; /*espacio entre los elementos*/
+    align-items: center; /*alinea los elementos al centro*/
+}
+.img-perfil {
+    border-radius: 50%; /*bordes redondeados*/
+}
+
+/*Responsive design*/
+/* Media agrupada */
+
+/* Estilos para pantallas pequeñas, celular de 768px o menos */
+@media (max-width: 768px) {
+    .titulo {
+        justify-content: center; /*centra el contenido*/
+    }
+    .navigation{
+        flex-direction: column; /*cambia la direccion de los elementos*/
+        gap: 1rem; /*espacio entre los elementos*/
+        align-items: center;
+    }
+    .container-sobremi {
+        width: 100%; /*ancho del contenedor*/
+        padding: 1rem; /*espacio interno*/
+        margin-top: 1rem; /*margen superior*/   
+        line-height: 2.5rem; /*espacio entre los parrafos*/
+        font-size: small; /*tamaño de la fuente*/
+    }
+}
+/* Estilos para pantallas medianas, tablet de 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .titulo {
+        justify-content: center; /*centra el contenido*/
+    }
+    .navigation{
+        gap: 2rem; /*espacio entre los elementos*/
+        justify-items: center;
+    }
+}
+
+/* Estilos para pantallas grandes, desktop de 1024px o más */
+@media (min-width: 1024px) {
+    .titulo {
+        justify-content: flex-start; /*justifica el contenido a la izquierda*/
+    }
+    .navigation{
+        gap: 3rem; /*espacio entre los elementos*/
+        justify-items: flex-end; /*justifica los elementos a la derecha*/
+        margin: 0  3rem; /*margen superior e inferior*/
+    }
+}
