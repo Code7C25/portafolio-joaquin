@@ -1,20 +1,18 @@
 /*Variables CSS*/
 :root {
-    --h3-color: #2b4b38; /*color destacado para h3*/
-    --section-margin: 3rem; /*margen entre secciones*/
+    --h3-color: #2b4b38;
+    --section-margin: 3rem;
 }
 
 /* Estilo para h3 */
 h3 {
-    color: var(--h3-color); /*aplica el color destacado*/
-    font-size: 1.5rem; /*aumenta el tamaño de la fuente*/
-    font-weight: bold; /*hace el texto más grueso*/
-    margin-bottom: 1rem; /*espacio inferior*/
+    color: var(--h3-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
-
-/* Espaciado entre secciones */
 section {
-    margin-bottom: var(--section-margin); /*aplica el margen entre secciones*/
+    margin-bottom: var(--section-margin); 
 }
 :root {
     --body-bg-color: #090909; 
@@ -46,16 +44,7 @@ h2 {
     font-weight: bold; /*hace el texto más grueso*/
     text-shadow: 2px 2px 4px #000000; /*agrega sombra al texto*/
 }
-/*
-body {
-    background: #000000;
-    color: #fff; 
-    font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}*/
 
-
-/*Titulo del header*/
 .titulo {
     font-size: 2rem;
     text-align: center;
