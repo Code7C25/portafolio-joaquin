@@ -1,5 +1,21 @@
 /*Variables CSS*/
+:root {
+    --h3-color: #2b4b38; /*color destacado para h3*/
+    --section-margin: 3rem; /*margen entre secciones*/
+}
 
+/* Estilo para h3 */
+h3 {
+    color: var(--h3-color); /*aplica el color destacado*/
+    font-size: 1.5rem; /*aumenta el tamaño de la fuente*/
+    font-weight: bold; /*hace el texto más grueso*/
+    margin-bottom: 1rem; /*espacio inferior*/
+}
+
+/* Espaciado entre secciones */
+section {
+    margin-bottom: var(--section-margin); /*aplica el margen entre secciones*/
+}
 :root {
     --body-bg-color: #090909; 
     --text-color: #ffffff; 
@@ -13,8 +29,22 @@ body {
     font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /*aplicar las variables CSS creadas por el root*/
-h1,h2{
+h1 {
     color: var(--colorh1-color); /*color de la fuente*/
+    font-size: 2.5rem; /*aumenta el tamaño de la fuente*/
+    font-weight: bold; /*hace el texto más grueso*/
+    text-align: center; /*centra el texto*/
+    margin-bottom: 1.5rem; /*espacio inferior*/
+    text-transform: uppercase; /*convierte el texto a mayúsculas*/
+    text-shadow: 3px 3px 6px #000000; /*agrega sombra al texto*/
+}
+
+h2 {
+    text-align: center; /*centra el texto*/
+    color: var(--colorh1-color); /*color de la fuente*/
+    font-size: 2rem; /*aumenta el tamaño de la fuente*/
+    font-weight: bold; /*hace el texto más grueso*/
+    text-shadow: 2px 2px 4px #000000; /*agrega sombra al texto*/
 }
 /*
 body {
@@ -43,13 +73,24 @@ body {
 }
 /* enlaces de la barra de navegacion*/
 .navigation li {
-    font-size: 1rem;
-    width:  100px; /*ancho de los elementos*/
+    font-size: 0.8rem; /*tamaño de fuente más pequeño*/
+    width: 80px; /*ancho más pequeño*/
     text-align: center;
-    padding: 0.5rem; /*espacio interno*/
+    padding: 0.3rem; /*espacio interno más pequeño*/
     border-radius: 0.5rem; /*bordes redondeados*/
     background: #1a1919; /*color de fondo*/
     box-shadow: 0 0 0.5rem #a3a3a3; /*sombra*/
+    margin: 0 auto; /*centra los elementos*/
+}
+
+/* Centrar la sección "mis estudios" */
+.mis-estudios {
+    display: flex;
+    justify-content: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    text-align: center; /*centra el texto*/
+    flex-direction: column; /*organiza los elementos en columna*/
+    margin: 2rem auto; /*margen superior/inferior y centra horizontalmente*/
 }
 /* estilo de la barra de navegacion*/
 a {
