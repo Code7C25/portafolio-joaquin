@@ -1,0 +1,47 @@
+.mis-estudios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    
+}
+.slider{
+    display: flex;
+    background: #011b27;
+    padding: 2px;
+    width: 45rem;
+    height: 15rem;;
+    overflow: hidden;
+    scroll-behavior: smoothc;
+}
+.slider img{
+    margin: 10px;
+    width: 15rem;
+    height: 15rem;
+}
+.control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #02293b;
+    cursor: pointer;
+    object-fit: cover;
+    padding: 10px;
+}
+.container .prev {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.container .next {
+    right: 0;
+    top: 50%;
+    transform: translate(50%,-50%);
+}

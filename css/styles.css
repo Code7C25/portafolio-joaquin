@@ -26,6 +26,7 @@ body {
     color: var(--text-color); /*color de la fuente*/
     font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /*aplicar las variables CSS creadas por el root*/
 h1 {
     color: var(--colorh1-color); /*color de la fuente*/
@@ -73,15 +74,15 @@ h2 {
 }
 
 /* Centrar la sección "mis estudios" */
-.mis-estudios {
+/* .mis-estudios {
     display: flex;
-    justify-content: center; /*centra horizontalmente*/
-    align-items: center; /*centra verticalmente*/
-    text-align: center; /*centra el texto*/
-    flex-direction: column; /*organiza los elementos en columna*/
-    margin: 2rem auto; /*margen superior/inferior y centra horizontalmente*/
-}
-/* estilo de la barra de navegacion*/
+    justify-content: center; centra horizontalmente 
+     align-items: center; centra verticalmente
+    text-align: center; centra el texto
+    flex-direction: column; organiza los elementos en columna
+    margin: 2rem auto; margen superior/inferior y centra horizontalmente
+}*/
+/*estilo de la barra de navegacion */
 a {
     text-decoration: none;
     color: #fff;
@@ -122,7 +123,7 @@ a {
     .container-sobremi {
         width: 100%; /*ancho del contenedor*/
         padding: 1rem; /*espacio interno*/
-        margin-top: 1rem; /*margen superior*/   
+        margin-top: 1rem; /*margen superior*/
         line-height: 2.5rem; /*espacio entre los parrafos*/
         font-size: small; /*tamaño de la fuente*/
     }

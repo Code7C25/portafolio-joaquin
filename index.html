@@ -3,77 +3,92 @@ en este caso del portafolio web, por lo tanto esta estructura puede variar segun
 
 <!DOCTYPE html>
 <html lang="es"> <!-- Definir el idioma -->
-<head>
-    <meta charset="UTF-8"> <!-- Definir el tipo de codificación -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- agregamos etiquetas meta para el Seo, y otra del author-->
-    <meta name="description" content="Portafolio web de Joaquin Arana">
-    <meta name="keywords" content="Portafolio, web, desarrollador web, programación,Contacto">
-    <meta name="author" content="Joaquin Arana">
-    <title>Portafolio web</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Joaquin Arana</h1>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#sobremi">Sobre mi</a></li>
-                <li><a href="#mis-estudios">Mis estudios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="sobremi" class="sobremi">
-            <article class="container-sobremi">
-                <img class="img-perfil" src="assets/perfil.jpg" alt="fotografia de Joaquin Arana" width="200" height="240">
-                <h2>
-                    ¡Hola! Mi nombre es Joaquin Arana. Soy un apasionado de la tecnología y la programación.
-                    Me encanta aprender cosas nuevas y aplicar mis conocimientos para resolver problemas
-                    y crear soluciones con la programación.
-                </h2>
-            </article>
-        </section>
-        <hr>
-        <section id="mis-estudios" class="mis-estudios">
-            <article class="container-estudios">
-                <h2>Mis estudios</h2>
-                <div style="display: flex; align-items: center;">
-                    <div>
-                        <p>Estudiante del Instituto de Enseñansa Privada el Obraje</p>
-                        <p>titulo de Tecnico en informatica</p>
+    <head>
+        <meta charset="UTF-8"> <!-- Definir el tipo de codificación -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- agregamos etiquetas meta para el Seo, y otra del author-->
+        <meta name="description" content="Portafolio web de Joaquin Arana">
+        <meta name="keywords" content="Portafolio, web, desarrollador web, programación,Contacto">
+        <meta name="author" content="Joaquin Arana">
+        <title>Portafolio web</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/stilo_estudios.css">
+    </head>
+    <body>
+        <header>
+            <h1>Joaquin Arana</h1>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="#mis-estudios">Mis estudios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="sobremi" class="sobremi">
+                <article class="container-sobremi">
+                    <img class="img-perfil" src="assets/perfil.jpg" alt="fotografia de Joaquin Arana" width="200" height="240">
+                    <h2>
+                        ¡Hola! Mi nombre es Joaquin Arana. Soy un apasionado de la tecnología y la programación.
+                        Me encanta aprender cosas nuevas y aplicar mis conocimientos para resolver problemas
+                        y crear soluciones con la programación.
+                    </h2>
+                </article>
+            </section>
+            <hr>
+            <section id="mis-estudios" class="mis-estudios">
+                <article class="container-estudios">
+                    <h2>Mis estudios</h2>
+                    <div style="display: flex; align-items: center;">
+                        <div>
+                            <p>Estudiante del Instituto de Enseñansa Privada el Obraje</p>
+                            <p>Ultimo año de secundaria y en proceso para recibir el titulo de Tecnico en informatica</p>
+                    <div class="container">
+                        <img class="control prev" src="assets/lecha_izquierda.png" alt="">
+                            <div class="slider">
+                                <img src="assets/cole.jpg" alt="">
+                                <img src="assets/obraje.png" alt="">
+                                
+                            </div>
+                        <img class="control next" src="assets/lecha_derecha.png" alt="">
                     </div>
-                    <img src="assets/obraje.png" alt="Logo del Instituto el Obraje" width="100" height="100" style="margin-left: 20px;">
-                </div>
-            </article>
-        </section>
-        <hr>
-        <section id="proyectos" class="proyectos">
-            <article class="container-proyectos">
-                <h2>Proyectos</h2>
-                <h3>Proyecto 1</h3>
-                <p>
-                    pagina web de un minimercado incluyendo base de datos (CRUD), sistema de login y carrito de compras
-                </p>
-                <h3>Proyecto 2</h3>
-                <p>
-                    minijuego en python de 3 en raya
-                </p>
-            </article>
-        </section>
-        <hr>
-        <section id="contacto" class="contacto">
-            <article class="container-contacto">
-                <h2>Contacto</h2>
-                <p>Telefono: +54 9 3547 67 5484</p>
-                <p>
-                    <a href="mailto:joacoarana06@gmail.com">
-                        <img src="Assets/gmil.png" alt="Icono de Gmail" width="20" height="25">:    
-                    </a>
-                    joacoarana06@gmail.com
-                </p>
-            </article>
+                </article>
+            </section>
+            <hr>
+            <section id="proyectos" class="proyectos">
+                <article class="container-proyectos">
+                    <h2>Proyectos</h2>
+                    <div>
+                        <h3>Proyecto 1</h3>
+                        <p>
+                            pagina web de un minimercado incluyendo base de datos (CRUD), sistema de login y carrito de compras
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Proyecto 2</h3>
+                        <p>
+                            minijuego en python de 3 en raya
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <hr>
+            <section id="contacto" class="contacto">
+                <article class="container-contacto">
+                    <h2>Contacto</h2>
+                    <p>Telefono: +54 9 3547 67 5484</p>
+                    <p>
+                        <a href="mailto:joacoarana06@gmail.com">
+                            <img src="Assets/gmil.png" alt="Icono de Gmail" width="20" height="25">:
+                        </a>
+                        joacoarana06@gmail.com
+                    </p>
+                </article>
+            </section>
+        </main>
+        <script src="js/galeri_study.js"></script>
+    </body>
 </html>
