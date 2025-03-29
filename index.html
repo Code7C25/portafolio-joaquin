@@ -14,6 +14,7 @@ en este caso del portafolio web, por lo tanto esta estructura puede variar segun
         <title>Portafolio web</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/stilo_estudios.css">
+        <link rel="stylesheet" href="css/proyectos.css">
     </head>
     <body>
         <header>
@@ -62,17 +63,40 @@ en este caso del portafolio web, por lo tanto esta estructura puede variar segun
                 <article class="container-proyectos">
                     <h2>Proyectos</h2>
                     <div>
-                        <h3>Proyecto 1</h3>
-                        <p>
-                            pagina web de un minimercado incluyendo base de datos (CRUD), sistema de login y carrito de compras
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Proyecto 2</h3>
-                        <p>
-                            minijuego en python de 3 en raya
-                        </p>
-                    </div>
+                        <div class="galeria-proyectos">
+                            <div class="proyecto">
+                                <img src="assets/caja_minimercado.png" alt="Vista previa del Proyecto 1">
+                                <h3>Proyecto 1</h3>
+                                <p>Sistema web para minimercados, personalizado, funcional y conectado a una base de datos.</p>
+                                <a href="https://github.com/joacoarana06/cajero">GitHub</a>
+                                <a href="#idiomas_1">Lenguajes usadas</a>
+                                
+                            </div>
+                            <div id="idiomas_1" class="idiomas1">
+                                <h3>Lenguajes usados</h3>
+                                <div class="contenedor-imagenes">
+                                    <img src="assets/log_html.png" alt="logo de html">
+                                    <img src="assets/logo_css.png" alt="logo de css">
+                                    <img src="assets/java_logo.png" alt="logo de JavaScript">
+                                    <img src="assets/logo_php.png" alt="logo de php">
+                                    <img src="assets/logo_mysql.png" alt="logo de mysql">
+                                </div>
+                                <a class="cerrar" href="#proyectos">X</a>
+                            </div>
+                            <div class="proyecto">
+                                <img src="assets/3 en raya foto.png" alt="Vista previa del Proyecto 2">
+                                <h3>Proyecto 2</h3>
+                                <p>juego de 3 en raya, basico pero perfectamente funcional ideal para jugar con un amigo</p>
+                                <a href="https://github.com/joacoarana06/3_en_raya">GitHub</a>
+                                <a href="#idiomas_2">Lenguajes usadas</a>
+                                <div id="idiomas_2" class="idiomas2">
+                                    <h3>Lenguajes usados</h3>
+                                    <div class="contenedor-imagenes">
+                                        <img src="assets/python_logo.png" alt="logo de python">
+                                    </div>
+                                    <a class="cerrar" href="#proyectos">X</a>
+                                </div>
+                        </div>
                 </article>
             </section>
             <hr>
