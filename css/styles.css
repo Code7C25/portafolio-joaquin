@@ -2,6 +2,9 @@
 :root {
     --h3-color: #2b4b38;
     --section-margin: 3rem;
+    --body-bg-color: #090909; 
+    --text-color: #ffffff; 
+    --colorh1-color: #ffffff;
 }
 
 /* Estilo para h3 */
@@ -14,11 +17,7 @@ h3 {
 section {
     margin-bottom: var(--section-margin); 
 }
-:root {
-    --body-bg-color: #090909; 
-    --text-color: #ffffff; 
-    --colorh1-color: #ffffff; 
-}
+
 /*aplicar las variables CSS creadas por el root*/
 /*aplicar las variables CSS creadas por el root*/
 body {
@@ -46,76 +45,7 @@ h2 {
     text-shadow: 2px 2px 4px #000000; /*agrega sombra al texto*/
 }
 
-.titulo {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem;
-}
 a {
     text-decoration: none;
     color: #fff;
 }
-
-.sobremi {
-    display: flex;
-    justify-content: center; /*centra el contenido*/
-}
-.container-sobremi {
-    display: flex;
-    width: 50%; /*ancho del contenedor*/
-    padding: 2rem;
-    margin-top: 5rem; /*margen superior*/
-    line-height: 2.5rem; /*espacio entre los parrafos*/
-    font-size: large; /*tamaño de la fuente*/
-    color: azure; /*color de la fuente*/
-    gap: 5rem; /*espacio entre los elementos*/
-    align-items: center; /*alinea los elementos al centro*/
-}
-.img-perfil {
-    border-radius: 50%; /*bordes redondeados*/
-}
-
-/*Responsive design*/
-/* Media agrupada */
-
-/* Estilos para pantallas pequeñas, celular de 768px o menos */
-@media (max-width: 768px) {
-    .titulo {
-        justify-content: center; /*centra el contenido*/
-    }
-    .navigation{
-        flex-direction: column; /*cambia la direccion de los elementos*/
-        gap: 1rem; /*espacio entre los elementos*/
-        align-items: center;
-    }
-    .container-sobremi {
-        width: 100%; /*ancho del contenedor*/
-        padding: 1rem; /*espacio interno*/
-        margin-top: 1rem; /*margen superior*/
-        line-height: 2.5rem; /*espacio entre los parrafos*/
-        font-size: small; /*tamaño de la fuente*/
-    }
-}
-/* Estilos para pantallas medianas, tablet de 768px a 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .titulo {
-        justify-content: center; /*centra el contenido*/
-    }
-    .navigation{
-        gap: 2rem; /*espacio entre los elementos*/
-        justify-items: center;
-    }
-}
-
-/* Estilos para pantallas grandes, desktop de 1024px o más */
-@media (min-width: 1024px) {
-    .titulo {
-        justify-content: flex-start; /*justifica el contenido a la izquierda*/
-    }
-    .navigation{
-        gap: 3rem; /*espacio entre los elementos*/
-        justify-items: flex-end; /*justifica los elementos a la derecha*/
-        margin: 0  3rem; /*margen superior e inferior*/
-    }
-}
-

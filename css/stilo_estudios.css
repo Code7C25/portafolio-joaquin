@@ -6,12 +6,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Asegura que el padding y border no aumenten el tamaño total */
+    flex-direction: column; /* Cambia a columna para mejor disposición en pantallas pequeñas */
+}
+
+.container-estudios {
+    text-align: center; /* Centra el texto */
+    margin-top: 2rem; /* Margen superior para separación */
 }
 
 .container {
     position: relative; /* Permite posicionar elementos hijos de forma absoluta */
     display: flex; /* Usa flexbox para alinear elementos internos */
     align-items: center; /* Centra verticalmente los elementos dentro */
+    justify-content: center; /* Centra horizontalmente */
 }
 
 .slider {
@@ -76,3 +83,48 @@
     top: 50%;
     transform: translate(-100%, -50%);
 }
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .mis-estudios {
+        padding: 1rem; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .container-estudios h2 {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+        margin-bottom: 1rem; /* Agrega espacio debajo del título */
+    }
+
+    .slider {
+        width: 90%; /* Ajusta el ancho del slider para pantallas más pequeñas */
+        height: 12rem; /* Reduce la altura del carrusel */
+    }
+
+    .slide {
+        width: 8rem; /* Reducimos el tamaño de las imágenes laterales */
+        height: 10rem; /* Altura de las imágenes laterales */
+    }
+
+    .active {
+        width: 12rem; /* Ajusta el tamaño de la imagen activa */
+        height: 12rem;
+    }
+
+    .control {
+        width: 30px; /* Ajusta el tamaño de los botones */
+        height: 30px;
+    }
+
+    .container .prev {
+        left: 0; /* Coloca el botón de la izquierda en el extremo izquierdo */
+        top: 50%; /* Lo centra verticalmente */
+        transform: translate(-30%, -50%); /* Ajusta la posición para que esté completamente alineado */
+    }
+    
+    .container .next {
+        right: 0; /* Coloca el botón de la derecha en el extremo derecho */
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+}
+
