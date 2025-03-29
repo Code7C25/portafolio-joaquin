@@ -51,38 +51,6 @@ h2 {
     text-align: center;
     margin: 1rem;
 }
-/*barra de navegacion*/
-.navigation {
-    display: flex; /*flexbox*/
-    gap: 3rem; /*espacio entre los elementos*/
-    list-style: none; /*quita los puntos de la lista*/
-    justify-content: flex-end; /*justifica los elementos a la derecha*/
-    margin: 0  3rem; /*margen superior e inferior*/
-    overflow: hidden; /*oculta los elementos que sobresalen*/
-    
-}
-/* enlaces de la barra de navegacion*/
-.navigation li {
-    font-size: 0.8rem; /*tamaño de fuente más pequeño*/
-    width: 80px; /*ancho más pequeño*/
-    text-align: center;
-    padding: 0.3rem; /*espacio interno más pequeño*/
-    border-radius: 0.5rem; /*bordes redondeados*/
-    background: #1a1919; /*color de fondo*/
-    box-shadow: 0 0 0.5rem #a3a3a3; /*sombra*/
-    margin: 0 auto; /*centra los elementos*/
-}
-
-/* Centrar la sección "mis estudios" */
-/* .mis-estudios {
-    display: flex;
-    justify-content: center; centra horizontalmente 
-     align-items: center; centra verticalmente
-    text-align: center; centra el texto
-    flex-direction: column; organiza los elementos en columna
-    margin: 2rem auto; margen superior/inferior y centra horizontalmente
-}*/
-/*estilo de la barra de navegacion */
 a {
     text-decoration: none;
     color: #fff;
@@ -150,3 +118,4 @@ a {
         margin: 0  3rem; /*margen superior e inferior*/
     }
 }
+

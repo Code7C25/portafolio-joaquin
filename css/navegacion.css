@@ -1,0 +1,38 @@
+.navigation {
+    background-color: #171616;
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0 3rem;
+    overflow: hidden;
+    width: 90%;
+    z-index: 1000;
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    top: 5px;
+    left: 8px;
+    width: 89%;
+}
+
+.navigation a:hover, .navigation a.active{
+    color: #a79393; /*color de la fuente*/
+    border-bottom: 3px solid #a79393 ;
+}
+/* enlaces de la barra de navegacion*/
+.navigation li {
+    font-size: 1rem; /*tamaño de fuente más pequeño*/
+    width: 100px; /*ancho más pequeño*/
+    text-align: center;
+    padding: 0.25rem; /*espacio interno más pequeño*/
+    border-radius: 0.5rem; /*bordes redondeados*/
+    margin: 0 auto; /*centra los elementos*/
+}
+.navigation a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

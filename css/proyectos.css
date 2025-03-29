@@ -74,6 +74,9 @@
     background: #683899; /* Fondo al pasar el mouse */
     transform: translateY(-5px); /* Desplazamiento al pasar el mouse */
 }
+.proyecto p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 /* ------------------- Estilos Responsive ------------------- */
 
