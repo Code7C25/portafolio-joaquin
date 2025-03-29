@@ -75,13 +75,20 @@
 .container .prev {
     left: 0; /* Coloca el botón de la izquierda en el extremo izquierdo */
     top: 50%; /* Lo centra verticalmente */
-    transform: translate(-70%, -50%); /* Ajusta la posición para que esté completamente alineado */
+    transform: translate(25%, -50%); /* Ajusta la posición para que esté completamente alineado */
+    background-color: #333;
 }
+
 
 .container .next {
     right: 0; /* Coloca el botón de la derecha en el extremo derecho */
     top: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-25%, -50%);
+    background-color: #333;
+}
+body.dark-mode .container .prev, 
+body.dark-mode .container .next {
+    background-color: transparent; /* Fondo oscuro para el modo oscuro */
 }
 
 /* Estilos para pantallas pequeñas */

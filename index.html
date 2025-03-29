@@ -18,7 +18,9 @@ en este caso del portafolio web, por lo tanto esta estructura puede variar segun
         <link rel="stylesheet" href="css/navegacion.css">
         <link rel="stylesheet" href="css/contacto.css">
         <link rel="stylesheet" href="css/sobremi.css">
+        <link rel="stylesheet" href="css/switch.css">
         <script src="js/navegacion.js"></script>
+        
         
     </head>
     <body>
@@ -31,6 +33,12 @@ en este caso del portafolio web, por lo tanto esta estructura puede variar segun
             </button>
             <nav>
                 <ul class="navigation" id="navigation">
+                    <li>
+                        <label class="switch">
+                          <input type="checkbox" id="toggle-mode">
+                          <span class="dark"></span> 
+                        </label>
+                      </label></li>
                     <li><a href="#sobremi">Sobre mi</a></li>
                     <li><a href="#mis-estudios">Mis estudios</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
@@ -128,6 +136,8 @@ en este caso del portafolio web, por lo tanto esta estructura puede variar segun
             </section>
         </main>
         <script src="js/galeri_study.js"></script>
+        <script src="js/barra_navegacion.js"></script>
+        <script src="js/dark_modo.js"></script>
         
     </body>
 </html>

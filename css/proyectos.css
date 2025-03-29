@@ -7,6 +7,9 @@
     padding: 2rem; /* Espacio interno */
     background: var(--fondo-proyectos); /* Color de fondo */
 }
+.proyecto h3{
+    color:#fff !important;
+}
 
 /* Contenedor que engloba los proyectos */
 .galeria-proyectos {

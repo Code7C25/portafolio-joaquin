@@ -1,15 +1,14 @@
 /*Variables CSS*/
 :root {
-    --h3-color: #2b4b38;
+   
     --section-margin: 3rem;
-    --body-bg-color: #090909; 
-    --text-color: #ffffff; 
-    --colorh1-color: #ffffff;
+    --body-bg-color: #ffffff; 
+    --text-color: #000000; 
+    --colorh1-color: #090909;
 }
 
 /* Estilo para h3 */
 h3 {
-    color: var(--h3-color);
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -48,4 +47,10 @@ h2 {
 a {
     text-decoration: none;
     color: #fff;
+}
+/* Modo Oscuro */
+body.dark-mode {
+    --body-bg-color: #090909; 
+    --text-color: #ffffff; 
+    --colorh1-color: #ffffff;   
 }
