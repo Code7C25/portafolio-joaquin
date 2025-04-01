@@ -1,0 +1,99 @@
+/* Estilos del botón  */
+.menu-toggle {
+    display: none; /* Inicialmente está oculto */
+    flex-direction: column;
+    gap: 4px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 85%;
+    z-index: 1100;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.navigation {
+    background-color: #171616;
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0 3rem;
+    overflow: hidden;
+    width: 90%;
+    z-index: 1000;
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    top: 5px;
+    left: 8px;
+    width: 89%;
+}
+
+.navigation a:hover, .navigation a.active{
+    color: #a79393; /*color de la fuente*/
+    border-bottom: 3px solid #a79393 ;
+}
+
+/* enlaces de la barra de navegacion*/
+.navigation li {
+    font-size: 1rem; /*tamaño de fuente más pequeño*/
+    width: 100px; /*ancho más pequeño*/
+    text-align: center;
+    padding: 0.25rem; /*espacio interno más pequeño*/
+    border-radius: 0.5rem; /*bordes redondeados*/
+    margin: 0 auto; /*centra los elementos*/
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    /* Esconde el menú de navegación en pantallas pequeñas */
+    .navigation {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        align-items: center;
+        width:70%; /* Cambiado para ocupar todo el ancho */
+    }
+
+    /* Muestra el botón hamburguesa solo en pantallas pequeñas */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Elimina la clase .fixed en pantallas pequeñas */
+    .fixed {
+        position: relative; /* El menú ya no será fijo en pantallas pequeñas */
+        width: 70%;
+    }
+}
+
+/* Mostrar el menú cuando se hace clic en el botón hamburguesa */
+.navigation.show {
+    display: flex; /* Muestra el menú */
+    animation: slide-down 0.3s ease-in-out; /* Animación de deslizamiento */
+}
+
+/* Animación para el menú deslizante */
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,137 @@
+.mis-estudios {
+    display: flex; /* Usa flexbox para centrar los elementos hijos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Ocupa al menos el alto completo de la pantalla */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border no aumenten el tamaño total */
+    flex-direction: column; /* Cambia a columna para mejor disposición en pantallas pequeñas */
+}
+
+.container-estudios {
+    text-align: center; /* Centra el texto */
+    margin-top: 2rem; /* Margen superior para separación */
+}
+
+.container {
+    position: relative; /* Permite posicionar elementos hijos de forma absoluta */
+    display: flex; /* Usa flexbox para alinear elementos internos */
+    align-items: center; /* Centra verticalmente los elementos dentro */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.slider {
+    display: flex; /* Usa flexbox para alinear las imágenes en fila */
+    width: 30rem; /* Ancho total del carrusel */
+    height: 18rem; /* Altura del carrusel */
+    overflow: hidden; /* Oculta las partes de las imágenes que sobresalen */
+    align-items: center; /* Asegura que las imágenes estén alineadas verticalmente */
+    position: relative; /* Permite posicionar los elementos hijos de manera absoluta */
+}
+
+.slide {
+    width: 10rem; /* Tamaño de las imágenes laterales */
+    height: 12rem; /* Altura de las imágenes laterales */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animaciones suaves al cambiar de imagen */
+    filter: brightness(50%); /* Reduce el brillo para destacar la imagen central */
+    position: absolute; /* Permite ubicar cada imagen en una posición específica */
+    opacity: 0.5; /* Hace que las imágenes laterales sean menos visibles */
+}
+
+.active {
+    width: 15rem; /* Aumenta el tamaño de la imagen central */
+    height: 15rem;
+    filter: brightness(100%); /* Restaura el brillo completo */
+    transform: scale(1.1); /* Hace zoom en la imagen central */
+    opacity: 1; /* Hace que la imagen central sea completamente visible */
+    left: 50%; /* Posiciona la imagen en el centro del slider */
+    transform: translateX(-50%); /* Asegura que la imagen esté centrada correctamente */
+    z-index: 10; /* Coloca la imagen central por encima de las laterales */
+}
+
+.left {
+    left: 5%; /* Ubica la imagen a la izquierda */
+    opacity: 0.5; /* Mantiene la opacidad baja */
+    transform: translateX(0); /* Evita que la imagen lateral se desplace */
+}
+
+.right {
+    right: 5%; /* Ubica la imagen a la derecha */
+    opacity: 0.5;
+    transform: translateX(0);
+}
+
+.control {
+    position: absolute; /* Permite posicionar los botones de navegación */
+    width: 50px; /* Tamaño de los botones */
+    height: 50px;
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre los botones */
+    object-fit: cover; /* Ajusta la imagen de los botones */
+    padding: 10px;
+}
+
+.container .prev {
+    left: 0; /* Coloca el botón de la izquierda en el extremo izquierdo */
+    top: 50%; /* Lo centra verticalmente */
+    transform: translate(25%, -50%); /* Ajusta la posición para que esté completamente alineado */
+    background-color: #333;
+}
+
+
+.container .next {
+    right: 0; /* Coloca el botón de la derecha en el extremo derecho */
+    top: 50%;
+    transform: translate(-25%, -50%);
+    background-color: #333;
+}
+body.dark-mode .container .prev, 
+body.dark-mode .container .next {
+    background-color: transparent; /* Fondo oscuro para el modo oscuro */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .mis-estudios {
+        padding: 1rem; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .container-estudios h2 {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+        margin-bottom: 1rem; /* Agrega espacio debajo del título */
+    }
+
+    .slider {
+        width: 90%; /* Ajusta el ancho del slider para pantallas más pequeñas */
+        height: 12rem; /* Reduce la altura del carrusel */
+    }
+
+    .slide {
+        width: 8rem; /* Reducimos el tamaño de las imágenes laterales */
+        height: 10rem; /* Altura de las imágenes laterales */
+    }
+
+    .active {
+        width: 12rem; /* Ajusta el tamaño de la imagen activa */
+        height: 12rem;
+    }
+
+    .control {
+        width: 30px; /* Ajusta el tamaño de los botones */
+        height: 30px;
+    }
+
+    .container .prev {
+        left: 0; /* Coloca el botón de la izquierda en el extremo izquierdo */
+        top: 50%; /* Lo centra verticalmente */
+        transform: translate(-30%, -50%); /* Ajusta la posición para que esté completamente alineado */
+    }
+    
+    .container .next {
+        right: 0; /* Coloca el botón de la derecha en el extremo derecho */
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+}
+

@@ -1,0 +1,219 @@
+/* ------------------- Estilos Generales ------------------- */
+
+/* Contenedor principal de proyectos */
+.proyectos {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 2rem; /* Espacio interno */
+    background: var(--fondo-proyectos); /* Color de fondo */
+}
+.proyecto h3{
+    color:#fff !important;
+}
+
+/* Contenedor que engloba los proyectos */
+.galeria-proyectos {
+    display: flex;
+    flex-wrap: wrap; /* Envuelve los elementos */
+    gap: 2rem; /* Espacio entre los elementos */
+    justify-content: center; /* Centra el contenido */
+    margin-top: 2rem; /* Espacio superior */
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.proyecto {
+    background-color: rgb(25, 1, 48); /* Fondo de la tarjeta */
+    border: 1px solid #45275d; /* Borde de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    margin: 0 0 2rem; /* Margen */
+    width: calc(33% - 40px); /* Ancho de la tarjeta */
+    box-shadow: 1px 2px 5px #af9fb6; /* Sombra */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Imagen dentro de la tarjeta de proyecto */
+.proyectos img {
+    width: 100%; /* Ancho de la imagen */
+    height: auto; /* Alto de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover en la imagen */
+.proyectos img:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Título del proyecto */
+.proyectos h3 {
+    margin-top: 10px; /* Margen superior */
+    font-size: 1.4rem; /* Tamaño de la fuente */
+    color: var(--highlight-color); /* Color de acento */
+}
+
+/* Descripción del proyecto */
+.proyectos p {
+    margin-top: 10px 0; /* Margen superior e inferior */
+    font-size: 1rem;
+    color: #eaeaea; /* Color claro para el texto */
+}
+
+/* Enlace de los proyectos (GitHub, etc.) */
+.proyectos a {
+    display: inline-block; /* Bloque en línea */
+    margin-top: 10px; /* Margen superior */
+    padding: 10px 15px; /* Espacio interno */
+    background: #3f2962; /* Color de fondo */
+    color: #fff; /* Color de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: background 0.3s ease, transform 0.3s ease; /* Efectos de transición */
+}
+
+/* Efecto hover en el enlace */
+.proyectos a:hover {
+    background: #683899; /* Fondo al pasar el mouse */
+    transform: translateY(-5px); /* Desplazamiento al pasar el mouse */
+}
+.proyecto p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ------------------- Estilos Responsive ------------------- */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .proyecto {
+        width: calc(100% - 40px); /* Ancho de la tarjeta */
+    }
+
+    .proyectos h3 {
+        font-size: 1.2rem; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .proyecto {
+        width: calc(50% - 40px); /* Ancho de la tarjeta */
+    }
+
+    .proyectos h3 {
+        font-size: 1.3rem; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+    .proyecto {
+        width: calc(33% - 40px); /* Ancho de la tarjeta */
+    }
+
+    .proyectos h3 {
+        font-size: 1.4rem; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* ------------------- Estilos del Modal ------------------- */
+
+/* Estilos del enlace en el modal */
+.idiomas1 a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.idiomas2 a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos generales del modal */
+.idiomas1, .idiomas2 {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(169, 152, 152, 0.9);
+    color: white;
+    width: 80%;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 1000;
+}
+.idiomas1{
+    max-width: 50rem; /* Ancho máximo */
+}
+.idiomas2{
+    max-width: 30rem; /* Ancho máximo */
+}
+
+
+/* Cuando el modal se muestra (con target) */
+.idiomas1:target, .idiomas2:target {
+    display: flex; /* Muestra el modal */
+    flex-direction: column; /* Estructura en columna */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor de las imágenes en fila */
+.contenedor-imagenes {
+    display: flex; /* Flexbox para organizar las imágenes */
+    flex-direction: row; /* Alineación en fila */
+    justify-content: center; /* Centra las imágenes */
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espaciado entre imágenes */
+    width: 100%; /* Usa todo el ancho disponible */
+    flex-wrap: nowrap; /* Evita que las imágenes bajen a una nueva línea */
+}
+
+/* Estilo de las imágenes en el modal */
+.idiomas1 img, .idiomas2 img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}
+
+
+/* Botón de cerrar */
+.cerrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: red;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+/* Estilos en pantallas pequeñas */
+@media (max-width: 768px) {
+    .idiomas1, .idiomas2 {
+        width: 90%; /* Hacer que el modal ocupe más espacio en móviles */
+        max-width: 100%; /* Asegurar que no se pase del borde */
+        min-width: auto; /* Evitar un tamaño fijo mínimo */
+    }
+
+    .idiomas1 img, .idiomas2 img {
+        width: 4rem; /* Reducir el tamaño de las imágenes en dispositivos pequeños */
+        height: 4rem;
+    }
+
+    .cerrar {
+        font-size: 1.2rem; /* Reducir tamaño del botón */
+        width: 40px; /* Ajustar tamaño del botón */
+        height: 40px;
+    }
+}

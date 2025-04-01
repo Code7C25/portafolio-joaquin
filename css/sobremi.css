@@ -1,0 +1,43 @@
+.sobremi {
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+}
+
+.container-sobremi {
+    display: flex;
+    width: 50%; /* Ancho del contenedor */
+    padding: 2rem;
+    margin-top: 5rem; /* Margen superior */
+    line-height: 2.5rem; /* Espacio entre los párrafos */
+    font-size: large; /* Tamaño de la fuente */
+    color: azure; /* Color de la fuente */
+    gap: 5rem; /* Espacio entre los elementos */
+    align-items: center; /* Alinea los elementos al centro */
+}
+
+.img-perfil {
+    border-radius: 50%; /* Bordes redondeados */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .container-sobremi {
+        flex-direction: column; /* Cambia a columna para apilar los elementos */
+        width: 80%; /* Ajusta el ancho a un 80% en pantallas pequeñas */
+        gap: 2rem; /* Reduce el espacio entre los elementos */
+    }
+
+    .img-perfil {
+        width: 150px; /* Reduce el tamaño de la imagen */
+        height: 180px; /* Ajusta la altura de la imagen */
+    }
+
+    .sobremi {
+        padding: 1rem; /* Reduce el padding del contenedor principal */
+    }
+
+    .container-sobremi h2 {
+        font-size: 1rem; /* Reduce el tamaño de la fuente del texto */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,56 @@
+/*Variables CSS*/
+:root {
+   
+    --section-margin: 3rem;
+    --body-bg-color: #ffffff; 
+    --text-color: #000000; 
+    --colorh1-color: #090909;
+}
+
+/* Estilo para h3 */
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+section {
+    margin-bottom: var(--section-margin); 
+}
+
+/*aplicar las variables CSS creadas por el root*/
+/*aplicar las variables CSS creadas por el root*/
+body {
+    background: var(--body-bg-color); /*color de fondo*/
+    color: var(--text-color); /*color de la fuente*/
+    font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*aplicar las variables CSS creadas por el root*/
+h1 {
+    color: var(--colorh1-color); /*color de la fuente*/
+    font-size: 2.5rem; /*aumenta el tamaño de la fuente*/
+    font-weight: bold; /*hace el texto más grueso*/
+    text-align: center; /*centra el texto*/
+    margin-bottom: 1.5rem; /*espacio inferior*/
+    text-transform: uppercase; /*convierte el texto a mayúsculas*/
+    text-shadow: 3px 3px 6px #000000; /*agrega sombra al texto*/
+}
+
+h2 {
+    text-align: center; /*centra el texto*/
+    color: var(--colorh1-color); /*color de la fuente*/
+    font-size: 2rem; /*aumenta el tamaño de la fuente*/
+    font-weight: bold; /*hace el texto más grueso*/
+    text-shadow: 2px 2px 4px #000000; /*agrega sombra al texto*/
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Modo Oscuro */
+body.dark-mode {
+    --body-bg-color: #090909; 
+    --text-color: #ffffff; 
+    --colorh1-color: #ffffff;   
+}

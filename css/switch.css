@@ -1,0 +1,51 @@
+/* Estilos del interruptor */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Hacerlo más pequeño */
+    height: 24px; /* Hacerlo más pequeño */
+  }
+  
+  /* El checkbox (input) es invisible, pero es el que controlará el cambio de estado */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* El estilo del slider (la parte del interruptor que se mueve) */
+  .dark { /* Cambié slider a dark */
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px; /* Forma redondeada */
+  }
+  
+  /* El círculo dentro del interruptor */
+  .dark:before { /* Cambié slider:before a dark:before */
+    position: absolute;
+    content: "";
+    height: 16px; /* Reducir tamaño del círculo */
+    width: 16px; /* Reducir tamaño del círculo */
+    border-radius: 50%;
+    left: 4px; /* Ajustar la posición del círculo */
+    bottom: 4px; /* Ajustar la posición del círculo */
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  /* Cuando el checkbox está activado (modo oscuro) */
+  input:checked + .dark { /* Cambié slider a dark */
+    background-color: #4CAF50; /* Color verde del modo oscuro */
+  }
+  
+  /* Mueve el círculo al lado derecho cuando está activado */
+  input:checked + .dark:before { /* Cambié slider:before a dark:before */
+    transform: translateX(16px); /* Ajustar el movimiento del círculo */
+  }
+  
